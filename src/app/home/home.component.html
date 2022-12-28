@@ -1,0 +1,32 @@
+
+
+<h1 id="a1" class="text-center">RANDOM USER DATA</h1>
+
+<div class="row" >
+<div class="col-4"></div>
+<div   class="col-4  p-3 ">
+  <div class="card" >
+  <img style="height: 100%;" class="card-img-top" [src]="user.image" alt="Card image cap">
+  <div style="text-align: center;">
+  <div class="card-body">
+    
+    <h5 class="card-title">{{user.firstName+" "+user.lastName}}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><i class="fa-solid fa-briefcase p-2"></i> {{user.company.title}}</li>
+    <li class="list-group-item"><i class="fa-solid fa-hotel p-2"></i>{{user.company.name}}</li>
+    <li class="list-group-item"><i class="fa-solid fa-location-dot p-3"></i>{{user.address.address+","+user.address.city}}</li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="col-4"></div>
+
+</div>
+<div class="text-center">
+  <button  (click)="getUsers()" type="button" class="btn btn-dark btn-lg p-3 border ">GET RANDOM USER</button>
+
+</div>
+
+
+
